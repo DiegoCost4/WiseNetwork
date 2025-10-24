@@ -4,32 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wise Network - Assistência Técnica Autorizada e Especializada</title>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Título Otimizado para SEO -->
+    <title>Wise Network | Assistência Técnica Autorizada em Alphaville - SP</title>
 
     <!-- SEO Meta Tags Essenciais -->
     <meta name="description"
         content="Assistência Técnica Autorizada e Especializada há mais de 20 anos em Alphaville. Manutenção de computadores, notebooks, impressoras, no-breaks e mais.">
     <meta name="keywords"
         content="assistência técnica, autorizada, especializada, alphaville, manutenção, computadores, notebooks, impressoras, no-breaks, wise network, positivo, epson, sms, ragtech">
-    <meta name="robots" content="index, follow"> <!-- Permite que o Google indexe a página -->
-    <link rel="canonical" href="https://www.wisenetwork.com.br/"> <!-- ATUALIZE para o seu domínio final -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.wisenetwork.com.br/">
 
     <!-- Favicon (substitua pelos seus arquivos de ícone) -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png"> <!-- Para iOS -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Open Graph (para compartilhamento social - Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Wise Network | Assistência Técnica Autorizada em Alphaville">
     <meta property="og:description"
         content="Há mais de 20 anos, a Wise Network é sua assistência técnica autorizada e especializada em Alphaville para computadores, notebooks, impressoras e mais.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.wisenetwork.com.br/"> <!-- ATUALIZE para o seu domínio final -->
+    <meta property="og:url" content="https://www.wisenetwork.com.br/">
     <meta property="og:image" content="https://www.wisenetwork.com.br/images/wise-social-share.png">
-    <!-- IMPORTANTE: Crie e suba uma imagem (1200x630px) para compartilhamento -->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Wise Network">
 
@@ -39,8 +37,10 @@
     <meta name="twitter:description"
         content="Há mais de 20 anos, a Wise Network é sua assistência técnica autorizada e especializada em Alphaville para computadores, notebooks, impressoras e mais.">
     <meta name="twitter:image" content="https://www.wisenetwork.com.br/images/wise-social-share.png">
-    <!-- IMPORTANTE: Use a mesma imagem do Open Graph -->
 
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,77 +72,49 @@
         body {
             font-family: 'Inter', sans-serif;
             color: #0D0D0D;
-            /* wise-dark */
-        }
-
-        /* Cor de fundo para ícones de serviço */
-        .service-icon-bg {
-            background-color: #E5E7EB;
-            color: #0C2059;
-            opacity: 1;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* --- Animação do Carrossel de Logos --- */
-        
-        /* Carrossel 1 (Autorizadas) - Indo para Esquerda */
         @keyframes scroll {
             0% {
                 transform: translateX(0);
             }
-            /* 10 logos * (w-40 (10rem) + mx-8 (4rem)) = 10 * 14rem = 140rem */
             100% {
-                transform: translateX(calc(-10 * 14rem)); /* Ajustado para 10 logos */
+                transform: translateX(calc(-10 * 14rem)); /* 10 logos * 14rem (w-40 + mx-8) */
             }
         }
-        
-        /* Carrossel 2 (Revenda) - Indo para Direita */
+
         @keyframes scroll-revenda {
             0% {
-                /* Começa da posição final (esquerda) */
-                transform: translateX(calc(-17 * 14rem)); 
+                transform: translateX(calc(-17 * 14rem)); /* 17 logos * 14rem (w-40 + mx-8) */
             }
-            /* 17 logos * (w-40 (10rem) + mx-8 (4rem)) = 17 * 14rem = 238rem */
             100% {
-                /* Termina na posição inicial (direita) */
                 transform: translateX(0);
             }
         }
 
         .animate-scroll {
-            /* Duração ajustada para 50s */
             animation: scroll 50s linear infinite;
         }
-        
+
         .animate-scroll-revenda {
-             /* Duração ajustada para 50s */
             animation: scroll-revenda 50s linear infinite;
         }
 
-
-        /* Pausa a animação ao passar o mouse */
         .pause-on-hover:hover .animate-scroll,
         .pause-on-hover:hover .animate-scroll-revenda {
             animation-play-state: paused;
         }
 
-        /* Efeito de fade nas laterais do carrossel */
         .slider-mask {
             mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
             -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
         }
-
-        /* --- Fim da Animação do Carrossel --- */
-        .slider-mask {
-            mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-        }
-
         /* --- Fim da Animação do Carrossel --- */
     </style>
 </head>
 
-<body class="bg-white">
+<body class="bg-gray-50">
 
     <!-- ========== HEADER / NAVBAR ========== -->
     <header class="bg-white sticky top-0 z-50 shadow-md">
@@ -190,45 +162,48 @@
     </header>
 
     <!-- ========== HERO SECTION ========== -->
-    <section class="bg-wise-darkblue text-white pt-20 pb-24">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
-        <div class="container mx-auto px-4 sm:px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                Há 20 anos a solução certa
-                <span class="block text-wise-lightblue">para sua tecnologia.</span>
-            </h1>
-            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10">
-                Assistência técnica autorizada e especializada para as maiores marcas do mercado. Confiança e qualidade
-                que você só encontra na Wise Network.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contato"
-                    class="bg-wise-red hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
-                    Fazer um Orçamento Rápido
-                </a>
-                <a href="#servicos"
-                    class="bg-transparent border-2 border-white hover:bg-white hover:text-wise-darkblue text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
-                    Nossos Serviços
-                </a>
+    <section class="bg-gradient-to-r from-wise-darkblue to-wise-midblue text-white pt-24 pb-32">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Coluna de Texto -->
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                        Há 20 anos a solução certa
+                        <span class="block text-wise-lightblue">para sua tecnologia.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-200 max-w-lg mb-10">
+                        Assistência técnica autorizada e especializada para as maiores marcas. Confiança e qualidade que
+                        você só encontra na Wise Network em Alphaville.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-start gap-4">
+                        <a href="#contato"
+                            class="bg-wise-red hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
+                            Fazer um Orçamento Rápido
+                        </a>
+                        <a href="#servicos"
+                            class="bg-transparent border-2 border-white hover:bg-white hover:text-wise-darkblue text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
+                            Nossos Serviços
+                        </a>
+                    </div>
+                </div>
+                <!-- Coluna de Imagem (Placeholder) -->
+                <div class="hidden md:block">
+                    <img src="./images/feche-o-fundo-componente-de-hardware.jpg"
+                        alt="Assistência Técnica Especializada" class="rounded-xl shadow-2xl">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ========== MARCAS AUTORIZADAS (TRUST BAR) ========== -->
-    <section id="marcas" class="bg-gray-100 py-16 overflow-hidden">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
+    <section id="marcas" class="bg-white py-16 overflow-hidden">
         <div class="container mx-auto px-4 sm:px-6">
             <h2 class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wider mb-10">
                 Assistência Técnica Autorizada e Especializada
             </h2>
-
-            <!-- Wrapper do Carrossel com fade e pausa no hover -->
             <div class="slider-mask relative w-full pause-on-hover">
-
-                <!-- Container dos logos (que será animado) -->
                 <div class="animate-scroll flex w-max items-center">
-
-                    <!-- Logos Originais (10 logos) -->
+                    <!-- 10 Logos Originais -->
                     <img src="./images/sms.png" alt="SMS"
                         class="w-40 mx-8 flex-shrink-0 filter grayscale hover:grayscale-0 transition-all duration-300"
                         onerror="this.src='https://placehold.co/160x60/f0f0f0/cccccc?text=SMS'; this.onerror=null;">
@@ -259,8 +234,7 @@
                     <img src="./images/apc.png" alt="APC"
                         class="w-40 mx-8 flex-shrink-0 filter grayscale hover:grayscale-0 transition-all duration-300"
                         onerror="this.src='https://placehold.co/160x60/f0f0f0/cccccc?text=APC'; this.onerror=null;">
-
-                    <!-- Logos Duplicados (para o loop infinito) (10 logos) -->
+                    <!-- 10 Logos Duplicados -->
                     <img src="./images/sms.png" alt="SMS"
                         class="w-40 mx-8 flex-shrink-0 filter grayscale hover:grayscale-0 transition-all duration-300"
                         onerror="this.src='https://placehold.co/160x60/f0f0f0/cccccc?text=SMS'; this.onerror=null;">
@@ -297,21 +271,13 @@
     </section>
 
     <!-- ========== REVENDA AUTORIZADA (TRUST BAR) ========== -->
-    <!-- ID corrigido para "revenda" -->
-    <section id="revenda" class="bg-gray-100 py-16 overflow-hidden">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
+    <section id="revenda" class="bg-white pt-8 pb-16 overflow-hidden">
         <div class="container mx-auto px-4 sm:px-6">
             <h2 class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wider mb-10">
                 Revenda Autorizada
             </h2>
-
-            <!-- Wrapper do Carrossel com fade e pausa no hover -->
             <div class="slider-mask relative w-full pause-on-hover">
-
-                <!-- Container dos logos (que será animado) -->
-                <!-- Classe de animação corrigida/adicionada -->
                 <div class="animate-scroll-revenda flex w-max items-center">
-
                     <!-- 17 Logos Originais -->
                     <img src="./images/HP.png" alt="HP"
                         class="w-40 mx-8 flex-shrink-0 filter grayscale hover:grayscale-0 transition-all duration-300"
@@ -364,8 +330,7 @@
                     <img src="./images/argox.png" alt="Argox"
                         class="w-40 mx-8 flex-shrink-0 filter grayscale hover:grayscale-0 transition-all duration-300"
                         onerror="this.src='https://placehold.co/160x60/f0f0f0/cccccc?text=Argox'; this.onerror=null;">
-
-                    <!-- 17 Logos Duplicados (para o loop infinito) -->
+                    <!-- 17 Logos Duplicados -->
                     <img src="./images/HP.png" alt="HP"
                         class="w-40 mx-8 flex-shrink-0 filter grayscale hover:grayscale-0 transition-all duration-300"
                         onerror="this.src='https://placehold.co/160x60/f0f0f0/cccccc?text=HP'; this.onerror=null;">
@@ -417,22 +382,14 @@
                     <img src="./images/argox.png" alt="Argox"
                         class="w-40 mx-8 flex-shrink-0 filter grayscale hover:grayscale-0 transition-all duration-300"
                         onerror="this.src='https://placehold.co/160x60/f0f0f0/cccccc?text=Argox'; this.onerror=null;">
-
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== SOBRE NÓS ========== -->
-    <section id="sobre" class="py-24 bg-white">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
+    <!-- ========== SOBRE NÓS (NOVO LAYOUT) ========== -->
+    <section id="sobre" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <!-- Imagem Sobre -->
-            <div>
-                <img src="./images/Frente-1.png" alt="Equipe Wise Network" class="rounded-lg shadow-2xl"
-                    onerror="this.src='https://placehold.co/600x450/0C2059/FFFFFF?text=Equipe+Wise+Network'; this.onerror=null;">
-            </div>
-
             <!-- Texto Sobre -->
             <div>
                 <span class="font-semibold text-wise-midblue uppercase tracking-wider">Sobre Nós</span>
@@ -443,194 +400,291 @@
                     Fundada em 2002, a Wise Network nasceu com o objetivo de atender com qualidade a crescente demanda
                     de serviços e produtos no setor de informática.
                 </p>
-                <p class="text-gray-700 leading-relaxed mb-8">
+                <p class="text-gray-700 leading-relaxed mb-10">
                     Para ocupar esta lacuna, estabelecemos parcerias com importantes empresas desenvolvedoras de
                     produtos, soluções de tecnologia e os maiores fabricantes do mundo.
                 </p>
-                <!-- Destaques -->
-                <!-- Ajustado para 1 coluna no mobile, 2 no sm -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="flex items-start space-x-3">
-                        <svg class="w-8 h-8 text-wise-lightblue flex-shrink-0" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <div>
-                            <h4 class="font-semibold text-lg">Técnicos Certificados</h4>
-                            <p class="text-gray-600">Equipe altamente treinada.</p>
-                        </div>
+                <!-- Destaques (NOVO) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div>
+                        <span class="text-5xl font-extrabold text-wise-lightblue">20+</span>
+                        <h4 class="font-semibold text-lg text-wise-darkblue mt-2">Anos no Mercado</h4>
+                        <p class="text-gray-600">Construindo confiança e credibilidade.</p>
                     </div>
-                    <div class="flex items-start space-x-3">
-                        <svg class="w-8 h-8 text-wise-lightblue flex-shrink-0" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <div>
-                            <h4 class="font-semibold text-lg">20+ Anos no Mercado</h4>
-                            <p class="text-gray-600">Sinônimo de confiança.</p>
-                        </div>
+                    <div>
+                        <span class="text-5xl font-extrabold text-wise-lightblue">17+</span>
+                        <h4 class="font-semibold text-lg text-wise-darkblue mt-2">Marcas Autorizadas</h4>
+                        <p class="text-gray-600">Parceria oficial com os maiores fabricantes.</p>
+                    </div>
+                    <div>
+                        <span class="text-5xl font-extrabold text-wise-lightblue">100%</span>
+                        <h4 class="font-semibold text-lg text-wise-darkblue mt-2">Técnicos Certificados</h4>
+                        <p class="text-gray-600">Equipe altamente treinada e especializada.</p>
+                    </div>
+                    <div>
+                        <span class="text-5xl font-extrabold text-wise-lightblue">10k+</span>
+                        <h4 class="font-semibold text-lg text-wise-darkblue mt-2">Clientes Atendidos</h4>
+                        <p class="text-gray-600">Soluções para empresas e residências.</p>
                     </div>
                 </div>
+            </div>
+            <!-- Imagem Sobre -->
+            <div class="flex justify-center">
+                <img src="./images/Frente-1.png" alt="Loja Wise Network em Alphaville"
+                    class="rounded-xl shadow-2xl max-w-md w-full"
+                    onerror="this.src='https://placehold.co/600x650/0C2059/FFFFFF?text=Wise+Network'; this.onerror=null;">
             </div>
         </div>
     </section>
 
-    <!-- ========== SERVIÇOS ========== -->
-    <section id="servicos" class="py-24 bg-gray-50">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="font-semibold text-wise-midblue uppercase tracking-wider">O que oferecemos</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-wise-darkblue mt-2 mb-4">
-                    Soluções Completas para sua Empresa ou Residência
-                </h2>
-                <p class="text-lg text-gray-700">
-                    Do diagnóstico preciso à manutenção e venda de acessórios, temos tudo o que você precisa em um só
-                    lugar.
+<!-- ========== SERVIÇOS (NOVO LAYOUT) ========== -->
+<section id="servicos" class="py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="font-semibold text-wise-midblue uppercase tracking-wider">O que oferecemos</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-wise-darkblue mt-2 mb-4">
+                Soluções Completas em Tecnologia
+            </h2>
+            <p class="text-lg text-gray-700">
+                Do diagnóstico preciso à manutenção, papelaria e venda de acessórios, temos tudo o que você precisa em um só lugar.
+            </p>
+        </div>
+
+        <!-- Grid de Serviços (Novo Estilo) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+            <!-- Card Serviço 1: Manutenções -->
+            <div
+                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                <svg class="w-12 h-12 text-wise-lightblue mb-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                    </path>
+                </svg>
+                <h3 class="text-2xl font-bold text-wise-darkblue mb-3">Manutenções</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Laboratórios equipados para manutenção em Computadores, Monitores, Impressoras, Projetores,
+                    No-breaks e Notebooks.
                 </p>
             </div>
 
-            <!-- Grid de Serviços -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                <!-- Card Serviço 1: Manutenções -->
-                <div
-                    class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <div class="relative w-16 h-16 rounded-full flex items-center justify-center mb-6 service-icon-bg">
-                        <svg class="w-8 h-8 text-wise-midblue" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-wise-darkblue mb-3">Manutenções</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Laboratórios equipados para manutenção em Computadores, Monitores, Impressoras, Projetores,
-                        No-breaks, Notebooks e redes.
-                    </p>
-                </div>
-
-                <!-- Card Serviço 2: Serviços de Atendimento -->
-                <div
-                    class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <div class="relative w-16 h-16 rounded-full flex items-center justify-center mb-6 service-icon-bg">
-                        <svg class="w-8 h-8 text-wise-midblue" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 20h5v-2a3 3 0 00-5.356-2.377M12 6H3v14h9m0-14l-4 4m0 0l4 4m-4-4h12"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-wise-darkblue mb-3">Serviços de Atendimento</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Assistência técnica especializada com laboratório próprio. Atendemos empresas, residências e
-                        condomínios com agilidade.
-                    </p>
-                </div>
-
-                <!-- Card Serviço 3: Acessórios -->
-                <div
-                    class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <div class="relative w-16 h-16 rounded-full flex items-center justify-center mb-6 service-icon-bg">
-                        <svg class="w-8 h-8 text-wise-midblue" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-wise-darkblue mb-3">Acessórios</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Ampla loja com Placas, Cabos, Cartuchos, Softwares, Componentes e mais. Mantemos estoque
-                        atualizado para sua necessidade.
-                    </p>
-                </div>
-
-                <!-- Card Serviço 4: Hospedagem e Sites -->
-                <div
-                    class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <div class="relative w-16 h-16 rounded-full flex items-center justify-center mb-6 service-icon-bg">
-                        <svg class="w-8 h-8 text-wise-midblue" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-wise-darkblue mb-3">Hospedagem e Sites</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Elaboração e construção de sites voltados para sua empresa, com planos de hospedagem adequados
-                        para seu site ficar ativo imediatamente.
-                    </p>
-                </div>
-
+            <!-- Card Serviço 2: Atendimento Rápido -->
+            <div
+                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                <svg class="w-12 h-12 text-wise-lightblue mb-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 20h5v-2a3 3 0 00-5.356-2.377M12 6H3v14h9m0-14l-4 4m0 0l4 4m-4-4h12"></path>
+                </svg>
+                <h3 class="text-2xl font-bold text-wise-darkblue mb-3">Atendimento Rápido</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Assistência técnica especializada. Atendemos empresas, residências e
+                    condomínios com agilidade e laboratório próprio.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <!-- ========== DEPOIMENTOS ========== -->
-    <section id="depoimentos" class="py-24 bg-white">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
+            <!-- Card Serviço 3: Acessórios -->
+            <div
+                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                <svg class="w-12 h-12 text-wise-lightblue mb-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                    </path>
+                </svg>
+                <h3 class="text-2xl font-bold text-wise-darkblue mb-3">Acessórios</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Ampla loja com Placas, Cabos, Cartuchos, Softwares, Componentes e mais. Estoque
+                    atualizado para sua necessidade.
+                </p>
+            </div>
+
+            <!-- Card Serviço 4: Hospedagem e Sites -->
+            <div
+                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                <svg class="w-12 h-12 text-wise-lightblue mb-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                    </path>
+                </svg>
+                <h3 class="text-2xl font-bold text-wise-darkblue mb-3">Hospedagem e Sites</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Elaboração e construção de sites voltados para sua empresa, com planos de hospedagem adequados
+                    para seu site ficar ativo.
+                </p>
+            </div>
+
+            <!-- Card Serviço 5: Papelaria -->
+            <div
+                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                <svg class="w-12 h-12 text-wise-lightblue mb-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12h6m2 0a9 9 0 11-18 0 9 9 0 0118 0zm-6 4h.01M9 8h6">
+                    </path>
+                </svg>
+                <h3 class="text-2xl font-bold text-wise-darkblue mb-3">Papelaria</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Linha completa de materiais escolares, de escritório e suprimentos. Qualidade e variedade para empresas e uso pessoal.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- ========== DEPOIMENTOS (NOVO LAYOUT) ========== -->
+    <section id="depoimentos" class="py-24 bg-wise-darkblue">
         <div class="container mx-auto px-4 sm:px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="font-semibold text-wise-midblue uppercase tracking-wider">Depoimentos</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-wise-darkblue mt-2 mb-4">
+                <span class="font-semibold text-wise-lightblue uppercase tracking-wider">Depoimentos</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">
                     O que nossos clientes dizem
                 </h2>
-                <p class="text-lg text-gray-700">
+                <p class="text-lg text-gray-300">
                     Nosso maior orgulho é a satisfação de quem confia em nosso trabalho há anos.
                 </p>
             </div>
 
-            <!-- Grid de Depoimentos -->
+            <!-- Grid de Depoimentos (Novo Estilo) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Depoimento 1 -->
-                <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 shadow-sm relative">
-                    <svg class="w-16 h-16 text-wise-lightblue opacity-20 absolute top-4 right-4" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <div class="bg-wise-midblue p-8 rounded-lg shadow-lg relative overflow-hidden">
+                    <svg class="w-32 h-32 text-wise-darkblue opacity-20 absolute -top-4 -left-4 z-0"
+                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
-                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                            clip-rule="evenodd" hidden></path>
-                    </svg> <!-- Ícone de aspas (pode ser substituído por um SVG de aspas) -->
-                    <p class="text-gray-700 italic text-lg mb-6">
+                            d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM6 7a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm0 4a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1z"
+                            clip-rule="evenodd" transform="scale(-1, 1) translate(-20, 0)">
+                            <path
+                                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11.002 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.002 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0z">
+                            </path>
+                            <path
+                                d="M4.58 12.58a.5.5 0 0 0 .84.343L6.416 12H10a.5.5 0 0 0 0-1H6.416l-1-1.257a.5.5 0 0 0-.84.343zM15.42 12.58a.5.5 0 0 1-.84.343L13.584 12H10a.5.5 0 0 1 0-1h3.584l1-1.257a.5.5 0 0 1 .84.343z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM6.29 6.29a.5.5 0 0 1 .707 0L10 9.293l2.998-3.001a.5.5 0 1 1 .708.706L10.707 10l3.001 2.998a.5.5 0 1 1-.706.708L10 10.707l-2.998 3.001a.5.5 0 1 1-.708-.706L9.293 10l-3.001-2.998a.5.5 0 0 1 0-.707z"
+                                clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM4 10a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 4 10z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M14.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM15 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM7 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM9 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M6 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3zm1 0h6v2H7V3z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M10 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM14 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                            <path fill-rule="evenodd" d="M3 10a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M13.293 6.293a1 1 0 0 1 1.414 0l.001.001.001.001 1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1zM5.293 6.293a1 1 0 0 1 1.414 0l1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1zM9.293 6.293a1 1 0 0 1 1.414 0l1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1z">
+                            </path>
+                        </svg> <!-- Ícone de aspas -->
+                    <p class="text-gray-200 italic text-lg mb-6 z-10 relative">
                         "Ficamos muito satisfeitos com os serviços prestados. Somos cliente há muitos anos e desde
                         sempre contamos com um atendimento preciso e de qualidade."
                     </p>
-                    <div class="flex items-center">
-                        <div class="ml-4">
-                            <p class="font-bold text-wise-darkblue">Vitor Fasanella</p>
-                            <p class="text-sm text-wise-midblue">Marfasa Embalagens</p>
+                    <div class="flex items-center z-10 relative">
+                        <div>
+                            <p class="font-bold text-white">Vitor Fasanella</p>
+                            <p class="text-sm text-wise-lightblue">Marfasa Embalagens</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Depoimento 2 -->
-                <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 shadow-sm relative">
-                    <p class="text-gray-700 italic text-lg mb-6">
+                <div class="bg-wise-midblue p-8 rounded-lg shadow-lg relative overflow-hidden">
+                    <svg class="w-32 h-32 text-wise-darkblue opacity-20 absolute -top-4 -left-4 z-0"
+                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM6 7a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm0 4a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1z"
+                            clip-rule="evenodd" transform="scale(-1, 1) translate(-20, 0)">
+                            <path
+                                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11.002 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.002 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0z">
+                            </path>
+                            <path
+                                d="M4.58 12.58a.5.5 0 0 0 .84.343L6.416 12H10a.5.5 0 0 0 0-1H6.416l-1-1.257a.5.5 0 0 0-.84.343zM15.42 12.58a.5.5 0 0 1-.84.343L13.584 12H10a.5.5 0 0 1 0-1h3.584l1-1.257a.5.5 0 0 1 .84.343z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM6.29 6.29a.5.5 0 0 1 .707 0L10 9.293l2.998-3.001a.5.5 0 1 1 .708.706L10.707 10l3.001 2.998a.5.5 0 1 1-.706.708L10 10.707l-2.998 3.001a.5.5 0 1 1-.708-.706L9.293 10l-3.001-2.998a.5.5 0 0 1 0-.707z"
+                                clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM4 10a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 4 10z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M14.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM15 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM7 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM9 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M6 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3zm1 0h6v2H7V3z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M10 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM14 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                            <path fill-rule="evenodd" d="M3 10a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M13.293 6.293a1 1 0 0 1 1.414 0l.001.001.001.001 1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1zM5.293 6.293a1 1 0 0 1 1.414 0l1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1zM9.293 6.293a1 1 0 0 1 1.414 0l1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1z">
+                            </path>
+                        </svg> <!-- Ícone de aspas -->
+                    <p class="text-gray-200 italic text-lg mb-6 z-10 relative">
                         "A Wise está de parabéns. Investindo cada dia mais em sua equipa técnica que é nota 10! É o ser
                         humano que tem a capacidade de entender nossas necessidades."
                     </p>
-                    <div class="flex items-center">
-                        <div class="ml-4">
-                            <p class="font-bold text-wise-darkblue">Márcia Milan</p>
-                            <p class="text-sm text-wise-midblue">Cond. Palácio das Américas</p>
+                    <div class="flex items-center z-10 relative">
+                        <div>
+                            <p class="font-bold text-white">Márcia Milan</p>
+                            <p class="text-sm text-wise-lightblue">Cond. Palácio das Américas</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Depoimento 3 -->
-                <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 shadow-sm relative">
-                    <p class="text-gray-700 italic text-lg mb-6">
+                <div class="bg-wise-midblue p-8 rounded-lg shadow-lg relative overflow-hidden">
+                    <svg class="w-32 h-32 text-wise-darkblue opacity-20 absolute -top-4 -left-4 z-0"
+                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM6 7a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm0 4a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1z"
+                            clip-rule="evenodd" transform="scale(-1, 1) translate(-20, 0)">
+                            <path
+                                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11.002 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.002 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0z">
+                            </path>
+                            <path
+                                d="M4.58 12.58a.5.5 0 0 0 .84.343L6.416 12H10a.5.5 0 0 0 0-1H6.416l-1-1.257a.5.5 0 0 0-.84.343zM15.42 12.58a.5.5 0 0 1-.84.343L13.584 12H10a.5.5 0 0 1 0-1h3.584l1-1.257a.5.5 0 0 1 .84.343z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM6.29 6.29a.5.5 0 0 1 .707 0L10 9.293l2.998-3.001a.5.5 0 1 1 .708.706L10.707 10l3.001 2.998a.5.5 0 1 1-.706.708L10 10.707l-2.998 3.001a.5.5 0 1 1-.708-.706L9.293 10l-3.001-2.998a.5.5 0 0 1 0-.707z"
+                                clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM4 10a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 4 10z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M14.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM11 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM15 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM7 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM9 5.002a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M6 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3zm1 0h6v2H7V3z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M10 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM14 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                            <path fill-rule="evenodd" d="M3 10a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M13.293 6.293a1 1 0 0 1 1.414 0l.001.001.001.001 1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1zM5.293 6.293a1 1 0 0 1 1.414 0l1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1zM9.293 6.293a1 1 0 0 1 1.414 0l1 1a1 1 0 0 1 0 1.414l-1 1a1 1 0 0 1-1.414 0l-1-1a1 1 0 0 1 0-1.414l1-1z">
+                            </path>
+                        </svg> <!-- Ícone de aspas -->
+                    <p class="text-gray-200 italic text-lg mb-6 z-10 relative">
                         "Rapidez é uma das características mais importantes. A Wise Network tem entendido bem a
                         importância disso, ajudando-nos com eficiência."
                     </p>
-                    <div class="flex items-center">
-                        <div class="ml-4">
-                            <p class="font-bold text-wise-darkblue">Leandro Figueiredo</p>
-                            <p class="text-sm text-wise-midblue">Imobiliária P. R. Leard</p>
+                    <div class="flex items-center z-10 relative">
+                        <div>
+                            <p class="font-bold text-white">Leandro Figueiredo</p>
+                            <p class="text-sm text-wise-lightblue">Imobiliária P. R. Leard</p>
                         </div>
                     </div>
                 </div>
@@ -639,61 +693,96 @@
         </div>
     </section>
 
-    <!-- ========== NOSSA LOCALIZAÇÃO (MAPA) ========== -->
-    <section id="localizacao" class="py-24 bg-gray-50">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
+    <!-- ========== LOCALIZAÇÃO E CONTATO (NOVO LAYOUT) ========== -->
+    <section id="contato" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="font-semibold text-wise-midblue uppercase tracking-wider">Onde estamos</span>
+                <span class="font-semibold text-wise-midblue uppercase tracking-wider">Contato e Localização</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-wise-darkblue mt-2 mb-4">
-                    Visite Nossa Loja
+                    Visite Nossa Loja ou Fale Conosco
                 </h2>
                 <p class="text-lg text-gray-700">
-                    Estamos localizados em Alphaville, prontos para atendê-lo com a melhor infraestrutura e técnicos
-                    especializados.
+                    Estamos localizados em Alphaville, prontos para atendê-lo com a melhor infraestrutura.
                 </p>
             </div>
 
-            <!-- Google Maps Embed -->
-            <div class="w-full h-[450px] rounded-lg shadow-2xl overflow-hidden">
-                <iframe
-                    src="https://www.google.com/maps?q=Cal%C3%A7ada+Antares,+63+%E2%80%93+Centro+de+Apoio+2+%E2%80%93+Alphaville+%E2%80%93+SP&output=embed"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+                <!-- Coluna do Mapa -->
+                <div class="w-full h-[550px] md:h-full rounded-xl shadow-2xl overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps?q=Cal%C3%A7ada+Antares,+63+%E2%80%93+Centro+de+Apoio+2+%E2%80%93+Alphaville+%E2%80%93+SP&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Coluna de Contato -->
+                <div class="bg-white p-8 sm:p-12 rounded-xl shadow-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold text-wise-darkblue mb-8">Informações de Contato</h3>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-wise-lightblue mr-4 mt-1 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-wise-darkblue">Endereço</h4>
+                                    <span class="text-gray-700">Calçada Antares, 63 – Centro de Apoio 2 – Alphaville –
+                                        SP</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-wise-lightblue mr-4 mt-1 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-wise-darkblue">Telefone</h4>
+                                    <span class="text-gray-700">(11) 4152-2743</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-wise-lightblue mr-4 mt-1 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-wise-darkblue">E-mail</h4>
+                                    <span class="text-gray-700">loja@wisenetwork.com.br</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-10 pt-8 border-t border-gray-200">
+                             <a href="https://wa.me/5511999169836" target="_blank"
+                                class="w-full bg-wise-red hover:bg-red-700 text-white font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-flex items-center justify-center">
+                                <!-- Ícone do WhatsApp -->
+                                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.06 21.94L7.31 20.58C8.75 21.37 10.35 21.81 12.04 21.81C17.5 21.81 21.95 17.36 21.95 11.91C21.95 6.45 17.5 2 12.04 2M12.04 3.67C16.56 3.67 20.28 7.38 20.28 11.91C20.28 16.44 16.56 20.14 12.04 20.14C10.5 20.14 9.04 19.74 7.79 19L7.42 18.8L3.9 19.78L4.93 16.41L4.7 16C3.77 14.68 3.31 13.09 3.31 11.91C3.31 7.38 7.03 3.67 12.04 3.67M9.25 6.7C9.06 6.7 8.89 6.79 8.76 7.03C8.63 7.27 8.21 7.9 8.21 8.9C8.21 9.9 8.78 10.84 8.9 11.02C9.02 11.2 10.21 13.2 12.13 14C13.79 14.69 14.28 14.53 14.67 14.48C15.22 14.4 16.22 13.88 16.42 13.28C16.62 12.68 16.62 12.19 16.55 12.08C16.48 11.96 16.29 11.89 16.03 11.75C15.77 11.61 14.71 11.09 14.46 11C14.21 10.91 14.04 10.87 13.88 11.11C13.72 11.35 13.26 11.89 13.12 12.08C12.98 12.26 12.83 12.3 12.57 12.2C12.31 12.1 11.45 11.85 10.42 10.9C9.62 10.18 9.08 9.29 8.94 9.05C8.8 8.81 8.92 8.67 9.04 8.56C9.15 8.45 9.29 8.28 9.43 8.12C9.58 7.97 9.62 7.85 9.72 7.67C9.82 7.49 9.78 7.33 9.71 7.19C9.64 7.06 9.25 6.7 9.25 6.7Z">
+                                    </path>
+                                </svg>
+                                Fale pelo WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== CTA FINAL / CONTATO ========== -->
-    <section id="contato" class="bg-wise-midblue text-white">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
-        <div class="container mx-auto px-4 sm:px-6 py-20 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Pronto para resolver seu problema de tecnologia?
-            </h2>
-            <p class="text-lg text-gray-200 max-w-2xl mx-auto mb-10">
-                Entre em contato conosco hoje mesmo. Nossa equipe está pronta para oferecer o melhor atendimento e a
-                solução definitiva que você precisa.
-            </p>
-            <a  href="https://wa.me/5511999169836?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Wise%20Network." target="_blank"
-                class="bg-wise-red hover:bg-red-700 text-white font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-flex items-center">
-                <!-- Ícone oficial do WhatsApp -->
-                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.001 2.667c-7.364 0-13.334 5.97-13.334 13.334 0 2.353.621 4.653 1.802 6.666l-1.885 6.893 7.062-1.846a13.257 13.257 0 006.355 1.621c7.364 0 13.334-5.97 13.334-13.334S23.365 2.667 16.001 2.667zm0 24.533a11.146 11.146 0 01-5.698-1.566l-.406-.24-4.197 1.097 1.12-4.099-.266-.421a11.056 11.056 0 01-1.73-5.803c0-6.135 4.991-11.126 11.126-11.126 6.134 0 11.125 4.991 11.125 11.126s-4.991 11.126-11.125 11.126zm6.104-8.376c-.333-.167-1.974-.974-2.281-1.084-.305-.113-.528-.167-.75.167-.222.333-.861 1.084-1.057 1.307-.195.222-.389.25-.722.083-.333-.167-1.405-.518-2.678-1.652-.99-.883-1.659-1.972-1.854-2.306-.194-.333-.021-.513.146-.68.15-.149.333-.389.5-.583.166-.195.222-.333.333-.555.11-.222.055-.416-.028-.583-.083-.167-.75-1.804-1.027-2.472-.27-.648-.541-.561-.75-.571-.194-.01-.416-.012-.639-.012a1.23 1.23 0 00-.889.417c-.306.333-1.167 1.14-1.167 2.781s1.194 3.225 1.361 3.448c.167.222 2.348 3.585 5.691 5.028 3.342 1.443 3.342.962 3.945.9.6-.056 1.974-.806 2.256-1.586.278-.778.278-1.445.195-1.586-.083-.139-.305-.222-.638-.389z" />
-                </svg>
-                Fale pelo WhatsApp
-            </a>
-
-        </div>
-    </section>
-
-
-
     <!-- ========== FOOTER ========== -->
     <footer class="bg-wise-darkblue text-gray-300 py-16">
-        <!-- Padding ajustado para px-4 sm:px-6 -->
         <div class="container mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
             <!-- Coluna 1: Logo e Sobre -->
             <div>
@@ -703,6 +792,25 @@
                 <p class="mt-4 text-gray-400 leading-relaxed">
                     Tecnologia em Informática desde 2002.
                 </p>
+                <!-- Redes Sociais Footer -->
+                <div class="flex space-x-4 mt-6">
+                    <a href="https://www.instagram.com/wiseinformatica" target="_blank" aria-label="Instagram"
+                        class="text-gray-400 hover:text-wise-lightblue transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.172.053 1.902.218 2.597.483.694.266 1.255.628 1.816 1.19.56.56.923 1.12 1.19 1.816.265.694.43 1.425.483 2.597.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.053 1.172-.218 1.902-.483 2.597-.266.694-.628 1.255-1.19 1.816-.56.56-1.12.923-1.816 1.19-.694.265-1.425.43-2.597.483-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.172-.053-1.902-.218-2.597-.483-.694-.266-1.255-.628-1.816-1.19-.56-.56-.923-1.12-1.19-1.816-.265-.694-.43-1.425-.483-2.597-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.053-1.172.218 1.902.483 2.597.266.694.628 1.255 1.19-1.816.56-.56 1.12.923 1.816-1.19.694-.265 1.425.43 2.597.483 1.266.058 1.646.07 4.85.07zM12 0C8.74 0 8.333.014 7.053.072 5.775.132 4.905.333 4.14.63c-.784.297-1.445.72-2.126 1.402C1.333 2.73 1.03 3.39.73 4.173c-.3.766-.5 1.636-.56 2.914C.114 8.333.1 8.74 0 12s.014 3.667.072 4.947c.06 1.278.26 2.148.56 2.914.3.784.72 1.445 1.402 2.126.68.68 1.342 1.104 2.126 1.402.766.3 1.636.5 2.914.56 1.28.058 1.687.072 4.947.072s3.667-.014 4.947-.072c1.278-.06 2.148-.26 2.914-.56.784-.3 1.445-.72 2.126-1.402.68-.68 1.104-1.342 1.402-2.126.3-.766.5-1.636.56-2.914.058-1.28.072-1.687.072-4.947s-.014-3.667-.072-4.947c-.06-1.278-.26-2.148-.56-2.914-.3-.784-.72-1.445-1.402-2.126C21.27 1.333 20.61 1.03 19.827.73c-.766-.3-1.636-.5-2.914-.56C15.667.014 15.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/wiseinformatica" target="_blank" aria-label="Facebook"
+                        class="text-gray-400 hover:text-wise-lightblue transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
 
             <!-- Coluna 2: Links Rápidos -->
@@ -721,10 +829,10 @@
             <div>
                 <h4 class="text-lg font-semibold text-white mb-4">Soluções</h4>
                 <ul class="space-y-3">
-                    <li><span class="text-gray-400">Manutenções</span></li>
-                    <li><span class="text-gray-400">Atendimento Técnico</span></li>
-                    <li><span class="text-gray-400">Venda de Acessórios</span></li>
-                    <li><span class="text-gray-400">Hospedagem e Sites</span></li>
+                    <li><a href="#servicos" class="text-gray-400 hover:text-wise-lightblue">Manutenções</a></li>
+                    <li><a href="#servicos" class="text-gray-400 hover:text-wise-lightblue">Atendimento Técnico</a></li>
+                    <li><a href="#servicos" class="text-gray-400 hover:text-wise-lightblue">Venda de Acessórios</a></li>
+                    <li><a href="#servicos" class="text-gray-400 hover:text-wise-lightblue">Hospedagem e Sites</a></li>
                 </ul>
             </div>
 
@@ -761,26 +869,6 @@
                         </svg>
                         <span class="text-gray-400">loja@wisenetwork.com.br</span>
                     </li>
-                    <!-- Instagram -->
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 text-wise-lightblue mr-3 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.172.053 1.902.218 2.597.483.694.266 1.255.628 1.816 1.19.56.56.923 1.12 1.19 1.816.265.694.43 1.425.483 2.597.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.053 1.172-.218 1.902-.483 2.597-.266.694-.628 1.255-1.19 1.816-.56.56-1.12.923-1.816 1.19-.694.265-1.425.43-2.597.483-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.172-.053-1.902-.218-2.597-.483-.694-.266-1.255-.628-1.816-1.19-.56-.56-.923-1.12-1.19-1.816-.265.694-.43-1.425-.483-2.597-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.053-1.172.218 1.902.483 2.597.266.694.628 1.255 1.19-1.816.56-.56 1.12.923 1.816-1.19.694-.265 1.425.43 2.597.483 1.266.058 1.646.07 4.85.07zM12 0C8.74 0 8.333.014 7.053.072 5.775.132 4.905.333 4.14.63c-.784.297-1.445.72-2.126 1.402C1.333 2.73 1.03 3.39.73 4.173c-.3.766-.5 1.636-.56 2.914C.114 8.333.1 8.74 0 12s.014 3.667.072 4.947c.06 1.278.26 2.148.56 2.914.3.784.72 1.445 1.402 2.126.68.68 1.342 1.104 2.126 1.402.766.3 1.636.5 2.914.56 1.28.058 1.687.072 4.947.072s3.667-.014 4.947-.072c1.278-.06 2.148-.26 2.914-.56.784-.3 1.445-.72 2.126-1.402.68-.68 1.104-1.342 1.402-2.126.3-.766.5-1.636.56-2.914.058-1.28.072-1.687.072-4.947s-.014-3.667-.072-4.947c-.06-1.278-.26-2.148-.56-2.914-.3-.784-.72-1.445-1.402-2.126C21.27 1.333 20.61 1.03 19.827.73c-.766-.3-1.636-.5-2.914-.56C15.667.014 15.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z">
-                            </path>
-                        </svg>
-                        <a href="https://www.instagram.com/wiseinformatica" target="_blank"
-                            class="text-gray-400 hover:text-wise-lightblue transition-colors">@wiseinformatica</a>
-                    </li>
-                    <!-- Facebook -->
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 text-wise-lightblue mr-3 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"></path>
-                        </svg>
-                        <a href="https://www.facebook.com/wiseinformatica" target="_blank"
-                            class="text-gray-400 hover:text-wise-lightblue transition-colors">@wiseinformatica</a>
-                    </li>
                 </ul>
             </div>
 
@@ -816,16 +904,17 @@
 
     <!-- ========== BOTÃO FLUTUANTE WHATSAPP ========== -->
     <a href="https://wa.me/5511999169836" target="_blank" aria-label="Fale Conosco pelo WhatsApp"
-        class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-xl hover:bg-[#1EBE57] transition-all duration-300 flex items-center justify-center">
+        class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-xl hover:bg-green-600 transition-all duration-300 flex items-center justify-center">
 
-        <!-- Ícone oficial do WhatsApp -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
-            class="w-7 h-7 sm:w-8 sm:h-8 fill-current text-white">
+        <!-- Ícone do WhatsApp SVG -->
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path
-                d="M16.001 2.667c-7.364 0-13.334 5.97-13.334 13.334 0 2.353.621 4.653 1.802 6.666l-1.885 6.893 7.062-1.846a13.257 13.257 0 006.355 1.621c7.364 0 13.334-5.97 13.334-13.334S23.365 2.667 16.001 2.667zm0 24.533a11.146 11.146 0 01-5.698-1.566l-.406-.24-4.197 1.097 1.12-4.099-.266-.421a11.056 11.056 0 01-1.73-5.803c0-6.135 4.991-11.126 11.126-11.126 6.134 0 11.125 4.991 11.125 11.126s-4.991 11.126-11.125 11.126zm6.104-8.376c-.333-.167-1.974-.974-2.281-1.084-.305-.113-.528-.167-.75.167-.222.333-.861 1.084-1.057 1.307-.195.222-.389.25-.722.083-.333-.167-1.405-.518-2.678-1.652-.99-.883-1.659-1.972-1.854-2.306-.194-.333-.021-.513.146-.68.15-.149.333-.389.5-.583.166-.195.222-.333.333-.555.11-.222.055-.416-.028-.583-.083-.167-.75-1.804-1.027-2.472-.27-.648-.541-.561-.75-.571-.194-.01-.416-.012-.639-.012a1.23 1.23 0 00-.889.417c-.306.333-1.167 1.14-1.167 2.781s1.194 3.225 1.361 3.448c.167.222 2.348 3.585 5.691 5.028 3.342 1.443 3.342.962 3.945.9.6-.056 1.974-.806 2.256-1.586.278-.778.278-1.445.195-1.586-.083-.139-.305-.222-.638-.389z" />
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.06 21.94L7.31 20.58C8.75 21.37 10.35 21.81 12.04 21.81C17.5 21.81 21.95 17.36 21.95 11.91C21.95 6.45 17.5 2 12.04 2M12.04 3.67C16.56 3.67 20.28 7.38 20.28 11.91C20.28 16.44 16.56 20.14 12.04 20.14C10.5 20.14 9.04 19.74 7.79 19L7.42 18.8L3.9 19.78L4.93 16.41L4.7 16C3.77 14.68 3.31 13.09 3.31 11.91C3.31 7.38 7.03 3.67 12.04 3.67M9.25 6.7C9.06 6.7 8.89 6.79 8.76 7.03C8.63 7.27 8.21 7.9 8.21 8.9C8.21 9.9 8.78 10.84 8.9 11.02C9.02 11.2 10.21 13.2 12.13 14C13.79 14.69 14.28 14.53 14.67 14.48C15.22 14.4 16.22 13.88 16.42 13.28C16.62 12.68 16.62 12.19 16.55 12.08C16.48 11.96 16.29 11.89 16.03 11.75C15.77 11.61 14.71 11.09 14.46 11C14.21 10.91 14.04 10.87 13.88 11.11C13.72 11.35 13.26 11.89 13.12 12.08C12.98 12.26 12.83 12.3 12.57 12.2C12.31 12.1 11.45 11.85 10.42 10.9C9.62 10.18 9.08 9.29 8.94 9.05C8.8 8.81 8.92 8.67 9.04 8.56C9.15 8.45 9.29 8.28 9.43 8.12C9.58 7.97 9.62 7.85 9.72 7.67C9.82 7.49 9.78 7.33 9.71 7.19C9.64 7.06 9.25 6.7 9.25 6.7Z">
+            </path>
         </svg>
     </a>
 
 </body>
 
 </html>
+
